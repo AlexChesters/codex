@@ -1,0 +1,35 @@
+# MARK - gh
+# MARK - gh
+prefix_rule(
+    pattern = ["gh", "pr", "view"],
+    decision = "allow"
+)
+
+# MARK - git
+prefix_rule(
+    pattern = ["git", "status"],
+    decision = "allow"
+)
+
+# MARK - make
+prefix_rule(
+    pattern = ["gh", "auth", "status"],
+    decision = "allow"
+)
+
+prefix_rule(
+    pattern = ["gh", "issue", "view"],
+    decision = "allow"
+)
+
+# MARK - git
+prefix_rule(
+    pattern = ["git", "status"],
+    decision = "allow"
+)
+
+# MARK - make
+prefix_rule(
+    pattern = ["make"],
+    decision = "allow"
+)
