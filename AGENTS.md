@@ -1,5 +1,10 @@
 # ~/.codex/AGENTS.md
 
+## General advice
+- Test observable behavior, not implementation details
+  - Avoid “change-detector” tests that mechanically mirror code or assert incidental internal calls/order
+  - Keep interaction assertions only when the interaction is part of the behavior contract
+
 ## Python
 - Avoid creating very large Python files
   - If creating several custom exceptions prefer creating an `errors.py` to contain them
