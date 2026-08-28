@@ -10,3 +10,7 @@
 - Use `ruff` for linting
 - Use `requests` for making HTTP requests
 - Do not write docstrings/comments for clean code; reserve comments for unusual situations
+
+## CloudFormation
+- Use YAML for CloudFormation templates with a `.yml` file extension
+- Do not include blank lines between resources
