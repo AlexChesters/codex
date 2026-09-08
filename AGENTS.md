@@ -19,3 +19,4 @@
 ## CloudFormation
 - Use YAML for CloudFormation templates with a `.yml` file extension
 - Do not include blank lines between resources
+- Prefer short form for CloudFormation functions where possible (`!Sub` instead of `!Fn::Sub`)
