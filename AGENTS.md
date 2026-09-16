@@ -4,6 +4,7 @@
 - Test observable behavior, not implementation details
   - Avoid “change-detector” tests that mechanically mirror code or assert incidental internal calls/order
   - Keep interaction assertions only when the interaction is part of the behavior contract
+- Do not preserve backwards compatibility unless explicitly instructed to
 
 ## Python
 - Avoid creating very large Python files
