@@ -5,6 +5,16 @@
   - Avoid “change-detector” tests that mechanically mirror code or assert incidental internal calls/order
   - Keep interaction assertions only when the interaction is part of the behavior contract
 - Do not preserve backwards compatibility unless explicitly instructed to
+- Prefer monorepos with the following structure:
+  - `apps/` - isolated microservices
+  - `common-resources/` - shared dependencies used by two or more apps, e.g. databases
+  - `clients/` - client applications
+    - `web/`
+    - `ios/`
+    - `android/`
+
+## AWS
+- Prefer `eu-west-1` unless another region is specified by the user or required due to service availability
 
 ## Python
 - Avoid creating very large Python files
@@ -21,3 +31,8 @@
 - Use YAML for CloudFormation templates with a `.yml` file extension
 - Do not include blank lines between resources
 - Prefer short form for CloudFormation functions where possible (`!Sub` instead of `!Fn::Sub`)
+- Create CloudFormation templates in a directory that includes the account name in the following format:
+  - `stacks/{account_name}-account/{template_name}.yml`
+- Create CloudFormation parameter files alongside templates:
+  - `stacks/{account_name}-account/parameters/[test|live].json`
+- Use the AWS CLI to deploy CloudFormation stacks with the `aws cloudformation deploy` command
