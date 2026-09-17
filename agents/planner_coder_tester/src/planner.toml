@@ -1,5 +1,5 @@
 name = "planner"
-description = "Read-only architect for substantial or ambiguous Cast changes. Use it to inspect the repository and produce an evidence-backed implementation plan; do not use it for small, obvious fixes."
+description = "Read-only architect for substantial or ambiguous changes. Use it to inspect the repository and produce an evidence-backed implementation plan; do not use it for small, obvious fixes."
 model = "gpt-5.6-terra"
 model_reasoning_effort = "high"
 sandbox_mode = "read-only"

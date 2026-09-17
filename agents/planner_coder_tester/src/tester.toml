@@ -1,5 +1,5 @@
 name = "tester"
-description = "Independent verification agent for completed Cast changes. Use it after implementation to run the agreed checks, probe focused regressions, and return concise evidence without modifying code or configuration."
+description = "Independent verification agent for completed changes. Use it after implementation to run the agreed checks, probe focused regressions, and return concise evidence without modifying code or configuration."
 model = "gpt-5.6-luna"
 model_reasoning_effort = "max"
 sandbox_mode = "workspace-write"
