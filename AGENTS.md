@@ -31,8 +31,3 @@
 - Use YAML for CloudFormation templates with a `.yml` file extension
 - Do not include blank lines between resources
 - Prefer short form for CloudFormation functions where possible (`!Sub` instead of `!Fn::Sub`)
-- Create CloudFormation templates in a directory that includes the account name in the following format:
-  - `stacks/{account_name}-account/{template_name}.yml`
-- Create CloudFormation parameter files alongside templates:
-  - `stacks/{account_name}-account/parameters/[test|live].json`
-- Create a shell script (named `deploy.sh`) to deploy CloudFormation stacks with the `aws cloudformation deploy` command
