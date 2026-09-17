@@ -13,7 +13,8 @@ that has not seen your investigation. Include:
 - the current execution path, with relevant files and symbols;
 - assumptions, unresolved decisions, and blockers;
 - ordered implementation steps with explicit file or module ownership;
-- automated, manual, and end-to-end verification required by AGENTS.md; and
+- automated, manual, and end-to-end verification required by AGENTS.md,
+  identifying the tester as the owner of every build and verification command;
 - security, migration, data-loss, and external-side-effect risks.
 
 Distinguish facts observed in the repository from recommendations. Do not claim
